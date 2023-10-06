@@ -1,0 +1,33 @@
+HTML
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'>
+    <h1 id='title'>freeCodeCamp Survey Form</h1>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <p id='description'>Thank you for taking the time to help us improve the platform</p>
+      <form id='survey-form'>
+         <label id ='name-label'>Name</label><input id ='name' type = 'text' required placeholder='Enter your name'/>
+       
+         <label id ='email-label'>Email</label><input id ='email' type ='email' required placeholder='Enter your Email'/>
+         <label id ='number-label'>Agree(optional)</label><input id ='number' type ='number' min='13' max ='120' placeholder='Age'/>
+         <label id ='role-label'>Which option best describes your current role?</label>
+           <select id='dropdown'>
+           <option value='0'>Select current role</option>
+           <option value='1'>Student</option>
+           <option value='2'>Full time job</option>
+           <option value='3'>Full time learner</option>
+           </select>
+           <label id='definitely-label'><input id='definitely-label' name='recommend-type' type='radio' value='button'>Definitely</label>
+           <label id='maybe-label'><input id='maybe-label' type='radio' name='recommend-type' value='button'>Maybe</label>
+           <label id='not-sure-label'><input id='not-sure-label' type='radio' name='recommend-type'value='button'>Not Sure</label>
+          
+          
+          <label id='front-label'><input id='front-end' type='checkbox'value='button'>Front-end Projects</label>
+           <label id='back-label'><input id='back-end' type='checkbox'value='button'>Back-end Projects</label>
+<label id='text-label'>Any comments or suggestions?<textarea id='question' name='question' rows='4' placeholder='Enter your comment here...'></textarea></label>
+<input id='submit' type='submit'>
+      </form>
+      </body>
