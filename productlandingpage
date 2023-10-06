@@ -1,0 +1,128 @@
+HTML
+<!DOCTYPE html>
+<html lang='en'>
+<header id='header'>
+  <title>Product Landing Page</title>
+  <img src='' id='header-img'>
+  <meta charset='UTF-8'>
+  <link rel='stylesheet' href='styles.css'>
+  <div class='logo'>
+    <img src='https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png' alt='original trombone logo'>
+  </div>
+  <nav id='nav-bar'>
+    <a class='nav-link' href='#features'>Features</a>
+    <a class='nav-link' href='#how_it_works'>How It Works</a>
+    <a class='nav-link' href='#pricing'>Pricing</a>
+    
+  </nav>
+</header>
+<body>
+  
+<h1>Handcrafted, home-made masterpieces</h1>
+<form id='form' action='https://www.freecodecamp.com/email-submit'>
+    <input id='email'type='email' placeholder='Enter your email address' name='email'>
+    <input id='submit' type='submit' value='Get started'>
+  </form>
+  <section id='features'>
+    <h1>Premium Materials</h1>
+      <p class='feature-subtext'>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+    <h1>Fast Shipping</h1>
+      <p class='feature-subtext'>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+    <h1>Quality Assurance</h1>
+      <p class='feature-subtext'>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+  </section>
+  <section id='how_it_works'>
+  <video src='https://www.youtube.com/watch?v=y8Yv4pnO7qc' id='video' width='400px' height='400'></video>
+  </section>
+  <section id='pricing'>
+    <div class='product' id='tenor'>
+      <h2>TENOR TROMBONE</h2>
+      <p class='price'>$600</p>
+      <ul>
+        <li>Lorem ipsum</li>
+        <li>Lorem ipsum</li>
+        <li>Lorem ipsum dolor</li>
+        <li>Lorem ipsum ipsum</li>
+      </ul>
+    </div>
+    <div class='product' id='bass'>
+      <h2>TENOR TROMBONE</h2>
+      <p class='price'>$900</p>
+      <ul>
+        <li>Lorem ipsum</li>
+        <li>Lorem ipsum</li>
+        <li>Lorem ipsum dolor</li>
+        <li>Lorem ipsum ipsum</li>
+      </ul>
+    </div>
+    <div class='product' id='valve'>
+      <h2>TENOR TROMBONE</h2>
+      <p class='price'>$1200</p>
+      <ul>
+        <li>Plays similar to a Trumpet</li>
+        <li>Great for Jazz Bands</li>
+        <li>Lorem ipsum dolor</li>
+        <li>Lorem ipsum ipsum</li>
+      </ul>
+    </div>
+  </section>
+  <footer class='footer'>
+  <a class='' href=''>Privacy</a>
+  <a class='' href=''>Terms</a>
+  <a class='' href=''>Contact</a>
+  <p class='credit'>Copyright 2016, Original Trombones</p>
+</footer>
+</body>
+CSS
+#nav-bar{
+  align-item:top;
+  position:absolute;
+}
+#video{
+  display:flex;
+  justify-content:center;
+}
+a{
+  text-decoration:none;
+  color:black;
+}
+#nav-bar{
+  display:flex;
+  justify-content:flex-end;
+  position:relative;
+  width:100%;
+  margin:30px;
+  padding:0 1px;
+  flex-direction:row;
+  flex-wrap:none;
+  
+  
+}
+img{
+  width:150px;
+  object-fit: cover;
+  height:20px;
+
+  
+}
+.How-It-Works{
+  align-item:center;
+}
+
+footer{
+  background-color:gray;
+  text-align:right;
+}
+#submit{
+  background-color:yellow;
+  
+}
+.price{
+  font-weight:bold;
+  font-size:20px;
+}
+@media only screen and (max-width:720px){
+  .logo{
+    min-width:100px;
+  }
+}
